@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 window.onload = function(){
    
@@ -16,3 +17,27 @@ document.getElementById("text").onblur = function ()  {
 
 
 
+=======
+document.querySelector("#btnPrompt").addEventListener('click', promtMe);
+
+function promtMe () {
+    link = prompt("Введіть посилання:");
+    if (link.startsWith('http') === false && link.startsWith('https') === false) {
+        link = `https://${link}`;
+    }
+}
+
+document.querySelector("#btnLink").addEventListener("click", transferLink);
+
+function transferLink () {
+    location.href = link;
+}
+
+
+
+
+
+
+
+
+>>>>>>> 57a022c (home work 29)
